@@ -1,4 +1,5 @@
 <img src="https://github.com/whdgns0407/Maestro/blob/main/Introduction%20image/main.png?raw=true">
+<br>
 # ※ 경고 ※ 아래 내용을 반드시 읽어주세요 ※
 # ※ 본 사이트 입금페이지의 비트코인주소와 쿼리 wallet table에 있는 비트코인주소에 자산을 절대 입금 하지 마십시오.
 # 개발 배경
@@ -15,12 +16,6 @@
 # 제공하는 기능
 # 메인페이지 
 https://api.upbit.com/v1/candles/days?market=krw-btc API를 배열화 하여 비트코인 매수 가능 가격, 매도 가능 가격, 가격 변동률을 메인페이지에 표시하여 줌. 쿼리로 부터 최근 공지사항, 최근 게시글, 최근 댓글을 작성시간 기준 내림차순하여 5개 보여줌 여기서 작성시간이 24h가 초과되지 않을 경우 new이미지 삽입, 최근 게시글에서 댓글 입력이 댓글수를 표시함. 로그인을 한 경우 거래내역, 고객센터 문의, 내가 쓴 게시글, 내가 쓴 댓글을 오름차순으로 표시하여줌.
-
-# 회원가입 
-정보를 입력 받고 회원가입을 하는 곳. 리캡챠를 통해 악성봇에 대비하였음.
-
-# 로그인 
-정보를 입력 받고 로그인 세션을 부여하는 곳. 리캡챠를 통해 악성봇에 대비하였음.
 
 # 비트코인 매수/매도 거래
 <img src="https://github.com/whdgns0407/Maestro/blob/main/Introduction%20image/exchange.png?raw=true">
