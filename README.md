@@ -1,6 +1,6 @@
-<img src="https://github.com/whdgns0407/Maestro/blob/main/Introduction%20image/main.png?raw=true">
-<br>
-# ※ 경고 ※ 아래 내용을 반드시 읽어주세요 ※
+<img src="https://github.com/whdgns0407/Maestro/blob/main/Introduction%20image/main.png?raw=true"><br><br>
+
+
 # ※ 본 사이트 입금페이지의 비트코인주소와 쿼리 wallet table에 있는 비트코인주소에 자산을 절대 입금 하지 마십시오.
 # 개발 배경
 * 2018년도 통신판매업, 사업자등록만 하면 가상화폐거래소를 누구나 만들수 있었다.
