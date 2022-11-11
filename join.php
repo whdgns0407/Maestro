@@ -51,7 +51,7 @@
 									<br>
 									<input class="btn btn-lg btn-success btn-block" type="submit" id="login" value="회원가입 »">
 								</fieldset>
-								<div class="g-recaptcha" data-sitekey="6Lfql3IUAAAAAIPSbublCv7O46I22qKLnKNN5Cbd" align="center"></div>
+								<div class="g-recaptcha" data-sitekey="6Lfkl3IUAAAAANzP4A06Bk7Y70RPVJ_2c-OWEz6E" align="center"></div>
 							</form>	
 						</div>
 						<a href="./login.php"><input class="btn btn-lg btn-success btn-block" type="button" value="로그인"></a>
