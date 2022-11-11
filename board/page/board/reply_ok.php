@@ -10,7 +10,6 @@
 			$queryinformation = mysql_fetch_array($query);
 			
 			$sql = mysql_query('insert into reply (con_num, name, pw, content, date) values ("'.$bno.'", "'.$queryinformation['name'].'" , "'.$queryinformation['email'].'", "'.mysql_real_escape_string($_POST['content']).'", "'.$date.'")');
-			echo "<script>alert('댓글이 작성 되었습니다.')</script>";
 			echo "<meta http-equiv=refresh content='0 url=./read.php?idx=$bno'>";
 		}
 		else 
