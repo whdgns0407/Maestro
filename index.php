@@ -526,7 +526,6 @@
 			<p class="text-center">가격 변동률 : <font style="color:<?php if($percentbtc>=0) echo "red"; else echo "blue";?>;"><?php if($percentbtc>=0) echo "+$percentbtc"; else echo $percentbtc1; ?>%</font></p><br>
 
 			<p class="text-center"><a href="./join.php">회원 가입</a> 후 개인의 비트코인 입금주소와 입금계좌를 발급 받아 비트코인을 거래해보세요.</p>
-			<p class="text-center">해당 웹페이지는 경상대학교-컴퓨터과학과-웹프로그래밍 발표 웹페이지 입니다. </p>
 			<p class="text-center">
 				<a class="btn btn-primary btn-lg" href="./login.php" role="button">로그인</a>
 				<a class="btn btn-primary btn-lg" href="./join.php" role="button">회원가입</a>
