@@ -1,4 +1,5 @@
-<img src="https://github.com/whdgns0407/Maestro/blob/main/Introduction%20image/main.png?raw=true"><br><br>
+이미지 클릭시 테스트할 수 있는 사이트로 이동됩니다.
+<a href="https://coinpark.co.kr" target="blank"><img src="https://github.com/whdgns0407/Maestro/blob/main/Introduction%20image/main.png?raw=true"></a><br><br>
 
 
 # ※ 본 사이트 입금페이지의 비트코인주소와 쿼리 wallet table에 있는 비트코인주소에 자산을 절대 입금 하지 마십시오.
