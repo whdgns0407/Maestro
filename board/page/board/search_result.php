@@ -10,9 +10,9 @@
 	<body>
 		<div id="board_area"> 
 			<?php
-				$catagory = mysql_real_escape_string($_GET['catgo']);
-				$search_con1 = mysql_real_escape_string($_GET['search']);
-				$search_con = mysql_real_escape_string($_GET['search']);
+				$catagory = ($_GET['catgo']);
+				$search_con1 = ($_GET['search']);
+				$search_con = ($_GET['search']);
 			?>
 			<h1>
 				<?php 
@@ -45,8 +45,7 @@
 					</tr>
 				</thead>
 				<?php
-					$sql2 = mysql_query("select * from board where '$catagory'
-					like '%$search_con%' order by idx desc");
+					$sql2 = mysql_query("select * from board where $catagory like '$search_con%' order by idx desc");
 					while($board = mysql_fetch_array($sql2))
 					{
 						$title=$board["title"]; 
