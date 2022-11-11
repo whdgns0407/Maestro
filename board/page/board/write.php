@@ -32,7 +32,7 @@
 						<textarea name="content" id="ucontent" placeholder="내용" width=500, height=100 required></textarea>
 					</div>
 					<input type="hidden" id="remoteip" name="remoteip" value="<?php echo $_SERVER['REMOTE_ADDR']; ?>">
-					<div class="g-recaptcha" data-sitekey="6Lfql3IUAAAAAIPSbublCv7O46I22qKLnKNN5Cbd"></div>
+					<div class="g-recaptcha" data-sitekey="6Lfkl3IUAAAAANzP4A06Bk7Y70RPVJ_2c-OWEz6E"></div>
 					<div class="bt_se">
 						<button type="submit">글 작성</button>
 					</div>
