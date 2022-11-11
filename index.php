@@ -10,6 +10,8 @@
 	}
 	$ch = curl_init();
 	curl_setopt($ch, CURLOPT_URL, "https://api.upbit.com/v1/orderbook?markets=krw-btc");
+	curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE); 
+	curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0); 
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 	$btc1 = explode('{"ask_price":', curl_exec($ch));
 	for($i=1;$i<=5;$i++)
@@ -18,9 +20,12 @@
 	}	
 	$change = curl_init();
 	curl_setopt($change, CURLOPT_URL, "https://api.upbit.com/v1/candles/days?market=krw-btc");
-	curl_setopt($change, CURLOPT_RETURNTRANSFER, 1);
+	curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE); 
+	curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0); 
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 	$change1 = explode('change_rate":', curl_exec($change));
-	$change2 = explode('}]',$change1[1]);
+	$change2 = explode('}]',$change1[0]);
+	
 	$btc2 = explode('"bid_price":', curl_exec($ch));
 	curl_close($ch);
 	for($i=1;$i<=5;$i++)
@@ -29,6 +34,8 @@
 	}
 	$change = curl_init();
 	curl_setopt($change, CURLOPT_URL, "https://api.upbit.com/v1/candles/days?market=krw-btc");
+	curl_setopt($change, CURLOPT_SSL_VERIFYPEER, FALSE); 
+	curl_setopt($change, CURLOPT_SSL_VERIFYHOST, 0); 
 	curl_setopt($change, CURLOPT_RETURNTRANSFER, 1);
 	$change1 = explode('change_rate":', curl_exec($change));
 	$change2 = explode('}]',$change1[1]);
@@ -167,7 +174,6 @@
 			<?php $mysumkrw = $queryinformation['krw']+($queryinformation['btc']*$buy[1]); ?>
 			<p class="text-center">총 자산 : <?php echo number_format($mysumkrw); ?> KRW</p>
 			<p class="text-center">내 원화 : <?php echo number_format($queryinformation['krw']); ?> KRW / 내 비트코인 : <?php echo number_format($queryinformation['btc'],4);?> BTC (KRW 환산 : <?php echo number_format($queryinformation['btc']*$buy[1]);?> KRW)</p>
-			<br><br><p class="text-center"><a href="./download/ppt.pptx">PPT다운로드</a>&nbsp;&nbsp;&nbsp;<a href="./download/htdocs.zip">웹 소스 다운로드</a></p>
 		</div>
 		<div class="panel-body">
 			<div class="media">
@@ -525,7 +531,6 @@
 				<a class="btn btn-primary btn-lg" href="./login.php" role="button">로그인</a>
 				<a class="btn btn-primary btn-lg" href="./join.php" role="button">회원가입</a>
 			</p>
-			<p class="text-center"><a href="./download/ppt.pptx">PPT다운로드</a>&nbsp;&nbsp;&nbsp;<a href="./download/htdocs.zip">웹 소스 다운로드</a></p>
 		</div>
 		<div class="row">
 			<table class="table" style="font-size:10px;">
