@@ -19,7 +19,6 @@
 				if($queryinformation['email'] == $bnoinformation['pw'])
 				{
 					$sql = mysql_query("update reply set content='".mysql_real_escape_string($_POST['content'])."' where idx='".$bno."'");
-					echo "<script>alert('댓글이 수정 되었습니다.')</script>";
 					echo "<meta http-equiv=refresh content='0 url=../read.php?idx=$con_num'>";
 				}
 				else
