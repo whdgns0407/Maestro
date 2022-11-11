@@ -65,7 +65,7 @@
 			로그인 비밀번호 :  <input type="password" name="password" placeholder="로그인 비밀번호" required autofocus><!-- 지갑 주소 최대 길이만큼 조절할것. --><br>
 			2차 비밀번호   :  <input type="password" name="password2" placeholder="2차 비밀번호" required autofocus><!-- 지갑 주소 최대 길이만큼 조절할것. --><br><br></b>
 			<input type="hidden" id="remoteip" name="remoteip" value="<?php echo $_SERVER['REMOTE_ADDR']; ?>">
-			<div class="g-recaptcha" data-sitekey="6Lfql3IUAAAAAIPSbublCv7O46I22qKLnKNN5Cbd"></div>
+			<div class="g-recaptcha" data-sitekey="6Lfkl3IUAAAAANzP4A06Bk7Y70RPVJ_2c-OWEz6E"></div>
 			<input type="submit" value="출금신청"><br>
 		</form>
 		<font size="4px">
