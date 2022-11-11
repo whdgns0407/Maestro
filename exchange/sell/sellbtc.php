@@ -1,12 +1,14 @@
 ﻿<?php
-	
-	$ch = curl_init();
+		$ch = curl_init();
 	curl_setopt($ch, CURLOPT_URL, "https://api.upbit.com/v1/orderbook?markets=krw-btc");
+	curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE); 
+	curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0); 
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-	$btc1 = explode('{"ask_price":', curl_exec($ch));
-	$btc2 = explode('"bid_price":', curl_exec($ch));
-	$btc11 = explode('"ask_size":', curl_exec($ch));
-	$btc22 = explode('"bid_size":', curl_exec($ch));
+	$btcbtc11 = curl_exec($ch);
+	$btc1 = explode('{"ask_price":', $btcbtc11 );
+	$btc2 = explode('"bid_price":', $btcbtc11 );
+	$btc11 = explode('"ask_size":', $btcbtc11 );
+	$btc22 = explode('"bid_size":', $btcbtc11 );
 	curl_close($ch);
 	for($i=1;$i<=8;$i++)
 	{
@@ -22,15 +24,18 @@
 	}
 	for($i=1;$i<=8;$i++)
 	{
-	$buyamount[$i] = explode("},",$btc22[$i])[0];
+		$buyamount[$i] = explode("},",$btc22[$i])[0];
 	}
 	$information = curl_init();
 	curl_setopt($information, CURLOPT_URL, "https://api.upbit.com/v1/trades/ticks?market=krw-btc&count=7");
+	curl_setopt($information, CURLOPT_SSL_VERIFYPEER, FALSE); 
+	curl_setopt($information, CURLOPT_SSL_VERIFYHOST, 0); 
 	curl_setopt($information, CURLOPT_RETURNTRANSFER, 1);
-	$trade = explode('"trade_price":', curl_exec($information));
-	$tradeamount = explode('"trade_volume":', curl_exec($information));
-	$tradet = explode('"trade_time_utc":"', curl_exec($information));
-	$tradebs = explode('"ask_bid":"', curl_exec($information));
+	$information1 = curl_exec($information);
+	$trade = explode('"trade_price":', $information1);
+	$tradeamount = explode('"trade_volume":', $information1);
+	$tradet = explode('"trade_time_utc":"', $information1);
+	$tradebs = explode('"ask_bid":"', $information1);
 	curl_close($information);
 	for($i=1;$i<=7;$i++)
 	{
