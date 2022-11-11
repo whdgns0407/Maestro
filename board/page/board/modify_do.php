@@ -21,7 +21,6 @@
 					$title = mysql_real_escape_string($_POST['title']);
 					$content = mysql_real_escape_string($_POST['content']);
 					$sql = mysql_query("update board set title='".$title."',content='".$content."' where idx='".$bno."'");
-					echo "<script>alert('게시글이 수정 되었습니다.')</script>";
 					echo "<meta http-equiv=refresh content='0 url=../read.php?idx=$bno'>";
 				}
 				else
